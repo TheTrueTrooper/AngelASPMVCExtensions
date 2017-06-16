@@ -3,7 +3,7 @@
 //Date Writen: June 16,2017
 //Project Goal: Encapsulate code for reuse and make more readable.
 //File Goal: Encapsulate the Code to do with Script and Style Extentions for Controller 
-//Link: yet to be made
+//Link: https://github.com/TheTrueTrooper/AngelASPExtentions
 //Sources: 
 //  {
 //  Name: ASP.NetMVC-razor-Example-TaskPlanner 

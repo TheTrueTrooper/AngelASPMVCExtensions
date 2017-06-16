@@ -1,4 +1,17 @@
-﻿using System;
+﻿#region WritersSigniture
+//Writer: Angelo Sanches
+//Date Writen: June 16,2017
+//Project Goal: Encapsulate code for reuse and make more readable.
+//File Goal: Encapsulate the Code to do with Script and Style Extentions for Controller 
+//Link: https://github.com/TheTrueTrooper/AngelASPExtentions
+//Sources: 
+//  {
+//  Name: ASP.NetMVC-razor-Example-TaskPlanner 
+//  Writer:Angelo Sanches
+//  Link: https://github.com/TheTrueTrooper/ASP.NetMVC-razor-Example-TaskPlanner
+//  }
+#endregion
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
