@@ -17,5 +17,5 @@ There is also a Result class called OpenStringResult. Its more there to extend a
 
 
 For the Razor DLL you must go to apps web.config in Views the view folder and add to the 
-<assemblies> and add <add assembly="AngelASPExtentions, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />. 
-Then in <namespaces> add <add namespace="AngelASPExtentions.ASPMVCRazorHTMLHelperExtentions" />
+\<assemblies\> and add \<add assembly="AngelASPExtentions, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" /\>. 
+Then in \<namespaces\> add \<add namespace="AngelASPExtentions.ASPMVCRazorHTMLHelperExtentions" /\>
