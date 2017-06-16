@@ -1,0 +1,16 @@
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Release\AngelASPExtentions.dll.config
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Release\AngelASPExtentions.dll
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Release\AngelASPExtentions.pdb
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Release\Antlr3.Runtime.dll
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Release\Newtonsoft.Json.dll
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Release\System.Web.Mvc.dll
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Release\System.Web.Optimization.dll
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Release\WebGrease.dll
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Release\Antlr3.Runtime.pdb
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Release\Newtonsoft.Json.xml
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Release\System.Web.Mvc.xml
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Release\System.Web.Optimization.xml
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\obj\Release\AngelASPExtentions.dll
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\obj\Release\AngelASPExtentions.pdb
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\obj\Release\AngelASPExtentions.csprojResolveAssemblyReference.cache
