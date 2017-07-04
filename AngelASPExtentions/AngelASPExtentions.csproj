@@ -66,6 +66,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AngelCSSToInlineEng\CSSCollectionData.cs" />
+    <Compile Include="AngelCSSToInlineEng\CSSObjectData.cs" />
     <Compile Include="ASPMVCControllerExtentions\RazorTemplatingControlleExtentions.cs" />
     <Compile Include="ASPMVCControllerExtentions\ScriptAndStyleControllerExtentions.cs" />
     <Compile Include="ASPMVCCustomResults\OpenStringResult.cs" />
