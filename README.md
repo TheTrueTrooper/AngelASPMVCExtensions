@@ -1,5 +1,5 @@
 # AngelASPExtentions
-A set of Extention Methods That allow for easy bundling from anywhere and razor templating to a string. Maybe Template a Email using razor?
+A set of Extention Methods that allow for easy bundling from anywhere and razor templating to a string. Maybe Template a Email using razor?
 
 This Is a ASP extention lib for ASP MVC Controllers and ASP MVC Razor HTML helper.
 
