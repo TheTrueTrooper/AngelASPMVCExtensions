@@ -68,10 +68,15 @@
   <ItemGroup>
     <Compile Include="AngelCSSToInlineEng\CSSCollectionData.cs" />
     <Compile Include="AngelCSSToInlineEng\CSSObjectData.cs" />
-    <Compile Include="ASPMVCControllerExtentions\RazorTemplatingControlleExtentions.cs" />
+    <Compile Include="ASPMVCControllerExtentions\RazorAndJsonTemplatingControlleExtentions.cs" />
+    <Compile Include="ASPMVCControllerExtentions\RedirectControllerExtentions.cs" />
     <Compile Include="ASPMVCControllerExtentions\ScriptAndStyleControllerExtentions.cs" />
+    <Compile Include="ASPMVCControllerExtentions\URLControllerExtentions.cs" />
+    <Compile Include="ASPMVCCustomResults\OpenJsonStringResult.cs" />
     <Compile Include="ASPMVCCustomResults\OpenStringResult.cs" />
+    <Compile Include="ASPMVCCustomResults\PostRedirectResult.cs" />
     <Compile Include="ASPMVCRazorHTMLHelperExtentions\HTMLHeplerExtentions.cs" />
+    <Compile Include="ExtraClasses\URLReplacementCharMap.cs" />
     <Compile Include="ExtraExtentions\StringExtentions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

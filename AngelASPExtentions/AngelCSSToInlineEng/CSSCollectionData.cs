@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace AngelASPExtentions.AngelCSSToInlineEng
 {
@@ -14,8 +15,19 @@ namespace AngelASPExtentions.AngelCSSToInlineEng
         Dictionary<string, CSSObjectData> HTMLObjects = new Dictionary<string, CSSObjectData>();
         Dictionary<string, CSSObjectData> OtherObjects = new Dictionary<string, CSSObjectData>();
 
-        CSSCollectionData()
-        { }
+        CSSCollectionData(params string[] Files)
+        {
+            foreach(string file in Files)
+            {
+                string FileContent;
+                using (StreamReader Text = new StreamReader(VirtualPathUtility.ToAbsolute(file)))
+                {
+                    FileContent = Text.ReadToEnd();
+                }
+
+                //FileContent.Split();
+            }
+        }
 
         CSSCollectionData(StreamReader File)
         {

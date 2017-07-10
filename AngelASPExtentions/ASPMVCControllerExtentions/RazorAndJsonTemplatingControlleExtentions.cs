@@ -24,7 +24,7 @@ namespace AngelASPExtentions.ASPMVCControllerExtentions
     /// <summary>
     /// Provides a Controller extention to Template off razor view and get it back as a string
     /// </summary>
-    public static class RazorTemplatingControlleExtentions
+    public static class RazorAndJsonTemplatingControlleExtentions
     {
         /// <summary>
         /// Gets a String rep. of a view Back after Templateing. This is usefull if you would like to Template an email or something?
@@ -34,7 +34,7 @@ namespace AngelASPExtentions.ASPMVCControllerExtentions
         /// <returns>The HTML Templated rep. as a string</returns>
         public static string GetRazorTemplateAsString(this Controller This, string ViewName, object Model = null)
         {
-            object TempRecallData = This.ViewData.Model;
+            object TempRecallData = Model ?? This.ViewData.Model;
 
             OpenStringResult Result = new OpenStringResult(ViewName);
 
@@ -45,6 +45,17 @@ namespace AngelASPExtentions.ASPMVCControllerExtentions
             Result.ExecuteResult(Context);
 
             This.ViewData.Model = TempRecallData;
+
+            return Result.Result;
+        }
+
+        public static string GetJsonAsString(this Controller This, object Model = null)
+        {
+            OpenJsonStringResult Result = new OpenJsonStringResult() { Data = Model ?? This.ViewData.Model };
+
+            ControllerContext Context = new ControllerContext(This.HttpContext, This.RouteData, This);
+
+            Result.ExecuteResult(Context);
 
             return Result.Result;
         }

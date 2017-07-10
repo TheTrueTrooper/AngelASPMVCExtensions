@@ -11,6 +11,7 @@
 //  Link: https://github.com/TheTrueTrooper/ASP.NetMVC-razor-Example-TaskPlanner
 //  }
 #endregion
+using AngelASPExtentions.ExtraClasses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,8 @@ namespace AngelASPExtentions.ExtraExtentions
     /// </summary>
     public static class StringExtentions
     {
+        public static URLReplacementCharMap DefaultURLReplacementMap = new URLReplacementCharMap();
+
         /// <summary>
         /// checks if a string is null or empty
         /// </summary>
@@ -33,5 +36,27 @@ namespace AngelASPExtentions.ExtraExtentions
         {
             return String.IsNullOrWhiteSpace(ToCheck);
         }
+
+        /// <summary>
+        /// Replaces the all the char from the keys to the Values 
+        /// </summary>
+        /// <param name="This">The string to act on</param>
+        /// <param name="Map">A Dictionary maping old values(keys) to new values(Values)</param>
+        /// <returns>A string with replaced char</returns>
+        public static string Replace(this string This, Dictionary<char, char> Map)
+        {
+            foreach (KeyValuePair<char, char> RKey in Map)
+            {
+                This = This.Replace(RKey.Key, RKey.Value);
+            }
+            return This;
+        }
+
+        public static string CleanURLIllegalChars(this string This, URLReplacementCharMap Map = null)
+        {
+            Map = Map ?? DefaultURLReplacementMap;
+            return This.Replace(Map.URLCharMap);
+        }
+
     }
 }
