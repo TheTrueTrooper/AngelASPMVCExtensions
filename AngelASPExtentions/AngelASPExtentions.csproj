@@ -44,6 +44,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -66,8 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AngelCSSToInlineEng\CSSCollectionData.cs" />
-    <Compile Include="AngelCSSToInlineEng\CSSObjectData.cs" />
+    <Compile Include="AngelCSSToInlineEng\CSSDataTypes\CSSCollectionData.cs" />
+    <Compile Include="AngelCSSToInlineEng\CSSDataTypes\CSSObjectData.cs" />
+    <Compile Include="AngelCSSToInlineEng\CSSFileReader\CSSFileReader.cs" />
     <Compile Include="ASPMVCControllerExtentions\RazorAndJsonTemplatingControlleExtentions.cs" />
     <Compile Include="ASPMVCControllerExtentions\RedirectControllerExtentions.cs" />
     <Compile Include="ASPMVCControllerExtentions\ScriptAndStyleControllerExtentions.cs" />
@@ -75,9 +77,11 @@
     <Compile Include="ASPMVCCustomResults\OpenJsonStringResult.cs" />
     <Compile Include="ASPMVCCustomResults\OpenStringResult.cs" />
     <Compile Include="ASPMVCCustomResults\PostRedirectResult.cs" />
-    <Compile Include="ASPMVCRazorHTMLHelperExtentions\HTMLHeplerExtentions.cs" />
+    <Compile Include="ASPMVCRazorHTMLHelperExtentions\ScriptAndStyleHTMLHeplerExtentions.cs" />
+    <Compile Include="ASPMVCRazorHTMLHelperExtentions\URLHTMLHeplerExtentions.cs" />
     <Compile Include="ExtraClasses\URLReplacementCharMap.cs" />
     <Compile Include="ExtraExtentions\StringExtentions.cs" />
+    <Compile Include="ExtraExtentions\TypeCheckingExtentions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

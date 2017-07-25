@@ -23,7 +23,7 @@ using System.Web.Optimization;
 
 namespace AngelASPExtentions.ASPMVCRazorHTMLHelperExtentions
 {
-    public static class HTMLHeplerExtentions
+    public static class ScriptAndStyleHTMLHeplerExtentions
     {
         /// <summary>
         /// This Renders To the HTML after the controller and view render Adds styles and script in the head of the DOM. In Debug it marks end and start.
@@ -185,4 +185,5 @@ namespace AngelASPExtentions.ASPMVCRazorHTMLHelperExtentions
             return AddToRenderScriptBundles(This, new string[] { ScriptBundles });
         }
     }
+
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AngelASPExtentions.AngelCSSToInlineEng
+namespace AngelASPExtentions.AngelCSSToInlineEng.CSSDataTypes
 {
     enum CSSBasicType
     {
@@ -31,6 +31,17 @@ namespace AngelASPExtentions.AngelCSSToInlineEng
         public string ObjectName;
         public CSSBasicType Type;
         public Dictionary<string, string> CSSDataTags = new Dictionary<string, string>();
+
+        protected CSSObjectData()
+        { }
+
+        public CSSObjectData(string name, CSSBasicType type, Dictionary<string, string> StyleValues = null)
+        {
+            ObjectName = name;
+            Type = type;
+            if (StyleValues != null)
+                CSSDataTags = StyleValues;
+        }
 
         string this[string Index]
         {

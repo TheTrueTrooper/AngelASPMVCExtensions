@@ -52,6 +52,12 @@ namespace AngelASPExtentions.ExtraExtentions
             return This;
         }
 
+        /// <summary>
+        /// Replaces the all the char from the keys in URLReplacementCharMap to the Values in the URLReplacementCharMap
+        /// </summary>
+        /// <param name="This">The string to act on</param>
+        /// <param name="Map">A map of all the keys to hit</param>
+        /// <returns>A string with replaced ilegal char</returns>
         public static string CleanURLIllegalChars(this string This, URLReplacementCharMap Map = null)
         {
             Map = Map ?? DefaultURLReplacementMap;

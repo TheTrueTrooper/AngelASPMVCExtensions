@@ -9,17 +9,21 @@ using System.Web.Script.Serialization;
 
 namespace AngelASPExtentions.ASPMVCCustomResults
 {
+    /// <summary>
+    /// a class that can be used to simply Retrevie json data as strings
+    /// </summary>
     class OpenJsonStringResult : JsonResult
     {
         /// <summary>
-        /// 
+        /// The resulting string
         /// </summary>
         public string Result;
 
         /// <summary>
-        /// 
+        /// forces a render and stores the existing json text as a string
+        /// Is only to be used with the contorller templating extention extention 
         /// </summary>
-        /// <param name="Context"></param>
+        /// <param name="Context">a Controller Context</param>
         public override void ExecuteResult(ControllerContext Context)
         {
             if (Context == null)
