@@ -1,4 +1,17 @@
-﻿using System;
+﻿#region WritersSigniture
+//Writer: Angelo Sanches
+//Date Writen: July 17,2017
+//Project Goal: Encapsulate code for reuse and make more readable.
+//File Goal: To add a full url Methods and other url methods as needed to the HTMLHelper class for use with views  
+//Link: https://github.com/TheTrueTrooper/AngelASPExtentions
+//Sources: 
+//  {
+//  Name: ASP.NetMVC-razor-Example-TaskPlanner 
+//  Writer:Angelo Sanches
+//  Link: https://github.com/TheTrueTrooper/ASP.NetMVC-razor-Example-TaskPlanner
+//  }
+#endregion
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
