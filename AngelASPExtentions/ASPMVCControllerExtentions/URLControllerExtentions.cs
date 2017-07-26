@@ -43,7 +43,7 @@ namespace AngelASPExtentions.ASPMVCControllerExtentions
             if (Controller == null || Action == null)
                 throw new Exception((Controller == null ? "Controller " : "") + (Action == null ? "Action " : "") + "were/was null and cannot be.");
             //Get the Host with the the port as a url and add the action to the end as a using the standard url action finding method
-            return GetHostWithPortURL(This, IsHttps) + (This.Request.Url.IsDefaultPort ? "" : ":" + This.Request.Url.Port) + This.Url.Action(Action, Controller, RouteValues);
+            return GetHostWithPortURL(This, IsHttps) + This.Url.Action(Action, Controller, RouteValues);
         }
 
         /// <summary>
