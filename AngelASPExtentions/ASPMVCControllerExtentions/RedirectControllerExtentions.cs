@@ -1,5 +1,5 @@
 ﻿#region WritersSigniture
-//Writer: Angelo Sanches
+//Writer: Angelo Sanches (BitSan)(Git:TheTrueTrooper)
 //Date Writen: July 18,2017
 //Project Goal: Encapsulate code for reuse and make more readable.
 //File Goal: To add a PostRedirect and other redirects as needed to the controller class  
@@ -7,8 +7,12 @@
 //Sources: 
 //  {
 //  Name: ASP.NetMVC-razor-Example-TaskPlanner 
-//  Writer:Angelo Sanches
+//  Writer/Publisher:Angelo Sanches (BitSan)
 //  Link: https://github.com/TheTrueTrooper/ASP.NetMVC-razor-Example-TaskPlanner
+//
+//  Name: ASP.net
+//  Writer/Publisher: Microsoft
+//  Link: https://www.asp.net/
 //  }
 #endregion
 using System;

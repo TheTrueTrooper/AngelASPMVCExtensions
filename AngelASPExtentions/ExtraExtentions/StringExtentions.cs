@@ -1,5 +1,5 @@
 ﻿#region WritersSigniture
-//Writer: Angelo Sanches
+//Writer: Angelo Sanches (BitSan)(Git:TheTrueTrooper)
 //Date Writen: June 16,2017
 //Project Goal: Encapsulate code for reuse and make more readable.
 //File Goal: Encapsulate the Code to do with Script and Style Extentions for Controller 
@@ -7,7 +7,7 @@
 //Sources: 
 //  {
 //  Name: ASP.NetMVC-razor-Example-TaskPlanner 
-//  Writer:Angelo Sanches
+//  Writer:Angelo Sanches (BitSan)
 //  Link: https://github.com/TheTrueTrooper/ASP.NetMVC-razor-Example-TaskPlanner
 //  }
 #endregion
