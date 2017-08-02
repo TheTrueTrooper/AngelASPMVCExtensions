@@ -44,6 +44,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -55,6 +56,9 @@
     </Reference>
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.WebPages">
+      <HintPath>..\..\ASP.NetMVCExample\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -82,6 +86,9 @@
     <Compile Include="ExtraClasses\URLReplacementCharMap.cs" />
     <Compile Include="ExtraExtentions\StringExtentions.cs" />
     <Compile Include="ExtraExtentions\TypeCheckingExtentions.cs" />
+    <Compile Include="ExtraValidationAttributes\Files\FileSizeAttribute.cs" />
+    <Compile Include="ExtraValidationAttributes\Files\FileTypeAttribute.cs" />
+    <Compile Include="ExtraValidationAttributes\Files\MaxFileNumAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +96,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="JavaScriptIncludes\jquery.validate.FilesExtention.js" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
