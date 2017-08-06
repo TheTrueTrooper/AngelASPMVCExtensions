@@ -84,7 +84,7 @@ function getFileSize(file)
 // This is to add file data annotation for the acceptable number of files
 $.validator.unobtrusive.adapters.add('maxfilenumber', ['Number'], function (options)
 {
-    options.rules['maxfilenumber'] = { maxfilenumber: options.params.maxfilenumber };
+    options.rules['maxfilenumber'] = { maxfilenumber: options.params.Number };
     options.messages['maxfilenumber'] = options.message;
 });
 
