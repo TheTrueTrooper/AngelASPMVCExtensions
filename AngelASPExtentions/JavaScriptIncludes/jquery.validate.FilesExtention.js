@@ -31,7 +31,7 @@ $.validator.addMethod("filetype", function (value, element, param)
 {
     for (var i = 0; i < element.files.length; i++)
     {
-        var extension = getFileExtension(element.files[0].name);
+        var extension = getFileExtension(element.files[i].name);
         if ($.inArray(extension, param.validtypes) === -1)
         {
             return false;
@@ -44,72 +44,55 @@ function getFileExtension(fileName)
 {
     if (/[.]/.exec(fileName))
     {
-        return /[^.]+$/.exec(fileName)[0].toLowerCase();
+        return /[^.]+$/.exec(fileName).toLowerCase();
     }
     return null;
 }
 
 // This is to add file data annotation for the acceptable sizes of files
-$.validator.unobtrusive.adapters.add('filetype', ['validtypes'], function (options)
+$.validator.unobtrusive.adapters.add('maxfilesize', ['size'], function (options)
 {
-    options.rules['filetype'] = { validtypes: options.params.validtypes.split(',') };
-    options.messages['filetype'] = options.message;
+    options.rules['maxfilesize'] = { size: options.params.size };
+    options.messages['maxfilesize'] = options.message;
 });
 
-$.validator.addMethod("filetype", function (value, element, param)
+$.validator.addMethod("maxfilesize", function (value, element, param)
 {
     for (var i = 0; i < element.files.length; i++)
     {
-        var extension = getFileExtension(element.files[0].name);
-        if ($.inArray(extension, param.validtypes) === -1)
-        {
+        if (getFileSize(element.files[i]) > param.size)
             return false;
-        }
     }
     return true;
 });
 
-function getFileSize(fileName)
+function getFileSize(file)
 {
-    var fileInput = document.getElementById("fUpload");
-    if (window.ActiveXObject)
+    var fileInput = file
+    try
     {
-        var fso = new ActiveXObject("Scripting.FileSystemObject");
-        var filepath = document.getElementById('fileInput').value;
-        var thefile = fso.getFile(filepath);
-        var sizeinbytes = thefile.size;
-        return sizeinbytes;
-    } else
-    {
-        var sizeinbytes = document.getElementById('fileInput').files[0].size;
+        var sizeinbytes = file.size;
         return sizeinbytes;
     }
-    return null;
+    catch(e)
+    {
+        return null;
+    }
 }
 
 
 // This is to add file data annotation for the acceptable number of files
-$.validator.unobtrusive.adapters.add('filetype', ['validtypes'], function (options)
+$.validator.unobtrusive.adapters.add('maxfilenumber', ['Number'], function (options)
 {
-    options.rules['filetype'] = { validtypes: options.params.validtypes.split(',') };
-    options.messages['filetype'] = options.message;
+    options.rules['maxfilenumber'] = { maxfilenumber: options.params.maxfilenumber };
+    options.messages['maxfilenumber'] = options.message;
 });
 
-$.validator.addMethod("filetype", function (value, element, param)
+$.validator.addMethod("maxfilenumber", function (value, element, param)
 {
-    for (var i = 0; i < element.files.length; i++)
+    if (element.files.length > params.maxfilenumber)
     {
-        var extension = getFileExtension(element.files[0].name);
-        if ($.inArray(extension, param.validtypes) === -1)
-        {
-            return false;
-        }
+        return false;
     }
     return true;
 });
-
-function getFileExtension(fileName)
-{
-    var fileInput = document.getElementById("fUpload");
-    return fileInput.files.length; // Size returned in bytes.
-}

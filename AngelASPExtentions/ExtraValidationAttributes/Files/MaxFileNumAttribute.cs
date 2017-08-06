@@ -77,7 +77,7 @@ namespace AngelASPExtentions.ExtraValidationAttributes.Files
                 ValidationType = "maxfilenumber",
                 ErrorMessage = ErrorMessageString
             };
-            rule.ValidationParameters.Add("size", _ValidFileNum);
+            rule.ValidationParameters.Add("Number", _ValidFileNum);
             yield return rule;
         }
     }
