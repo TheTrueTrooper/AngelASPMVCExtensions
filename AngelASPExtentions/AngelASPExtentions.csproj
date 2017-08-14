@@ -81,6 +81,7 @@
     <Compile Include="ASPMVCCustomResults\OpenJsonStringResult.cs" />
     <Compile Include="ASPMVCCustomResults\OpenStringResult.cs" />
     <Compile Include="ASPMVCCustomResults\PostRedirectResult.cs" />
+    <Compile Include="ASPMVCRazorHTMLHelperExtentions\InputForExtentions.cs" />
     <Compile Include="ASPMVCRazorHTMLHelperExtentions\ScriptAndStyleHTMLHeplerExtentions.cs" />
     <Compile Include="ASPMVCRazorHTMLHelperExtentions\URLHTMLHeplerExtentions.cs" />
     <Compile Include="ExtraClasses\URLReplacementCharMap.cs" />

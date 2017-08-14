@@ -18,7 +18,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AngelASPExtentions.ExtraExtentions
+namespace AngelASPExtentions.ExtraExtentions.Strings
 {
     /// <summary>
     /// Adds so string extentions

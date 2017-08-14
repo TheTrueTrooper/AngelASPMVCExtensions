@@ -31,7 +31,7 @@ namespace AngelASPExtentions.ExtraValidationAttributes.Files
     /// This property is to add file data annotation for the maximum size of files acceptable
     /// </summary>
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    class FileSizeAttribute : ValidationAttribute, IClientValidatable
+    public class FileSizeAttribute : ValidationAttribute, IClientValidatable
     {
         /// <summary>
         /// the Maximum size of files

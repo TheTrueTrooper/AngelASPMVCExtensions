@@ -14,6 +14,11 @@
 //  Name: stackoverflow.com question 40199870 Answer 1
 //  Writer/Publisher: Stephen Muecke answered Oct 23 '16 at 5:58
 //  Link: https://stackoverflow.com/questions/40199870/how-to-validate-file-type-of-httppostedfilebase-attribute-in-asp-net-mvc-4?answertab=votes#tab-top
+//  },
+//  {
+//  Name: Reading files in JavaScript using the File APIs
+//  Writer/Publisher: Eric Bidelman on June 18th, 2010
+//  Link: https://www.html5rocks.com/en/tutorials/file/dndfiles/
 //  }
 */
 

@@ -14,3 +14,7 @@ C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Debug\System.W
 C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\obj\Debug\AngelASPExtentions.csprojResolveAssemblyReference.cache
 C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\obj\Debug\AngelASPExtentions.dll
 C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\obj\Debug\AngelASPExtentions.pdb
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Debug\System.Web.WebPages.dll
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Debug\System.Web.WebPages.xml
+C:\Users\Angelo\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Debug\System.Web.WebPages.Deployment.xml

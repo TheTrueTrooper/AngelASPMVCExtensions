@@ -59,7 +59,7 @@ namespace AngelASPExtentions.ASPMVCControllerExtentions
         /// <param name="This">The Contorller extending off of</param>
         /// <param name="Model">The data to pass</param>
         /// <returns>The Json rep. as a string</returns>
-        public static string GetJsonAsString(this Controller This, object Model = null)
+        public static string GetJsonAsString(this Controller This, object Model)
         {
             OpenJsonStringResult Result = new OpenJsonStringResult() { Data = Model ?? This.ViewData.Model };
 

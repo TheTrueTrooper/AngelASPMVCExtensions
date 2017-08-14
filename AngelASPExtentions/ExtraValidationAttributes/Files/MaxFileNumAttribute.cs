@@ -31,7 +31,7 @@ namespace AngelASPExtentions.ExtraValidationAttributes.Files
     /// This property is to add file data annotation for the maximum number of files acceptable
     /// </summary>
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    class MaxFileNumAttribute : ValidationAttribute, IClientValidatable
+    public class MaxFileNumAttribute : ValidationAttribute, IClientValidatable
     {
         /// <summary>
         /// the Maximum number of files

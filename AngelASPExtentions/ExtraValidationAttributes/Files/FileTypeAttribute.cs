@@ -31,7 +31,7 @@ namespace AngelASPExtentions.ExtraValidationAttributes.Files
     /// This property is to add file data annotation for the acceptable types of files
     /// </summary>
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    class FileTypeAttribute : ValidationAttribute, IClientValidatable
+    public class FileTypeAttribute : ValidationAttribute, IClientValidatable
     {
         /// <summary>
         /// the valid types of files

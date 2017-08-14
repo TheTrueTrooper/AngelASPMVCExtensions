@@ -71,7 +71,7 @@ namespace AngelASPExtentions.ASPMVCControllerExtentions
         /// <param name="This">The controller to chain off(us this. in method)</param>
         /// <param name="StyleBundles">A list of virtual paths on which to find StyleBundles</param>
         /// <returns>Controller for chaining</returns>
-        public static Controller CAddToRenderStyleBundles(this Controller This, List<string> StyleBundles)
+        public static Controller AddToRenderStyleBundles(this Controller This, List<string> StyleBundles)
         {
             if (StyleBundles == null || StyleBundles.Count() < 1)
                 return This;
@@ -163,7 +163,7 @@ namespace AngelASPExtentions.ASPMVCControllerExtentions
         /// <param name="This">The controller to chain off(us this. in method)</param>
         /// <param name="StyleBundles">A list of virtual paths on which to find ScriptBundles</param>
         /// <returns>Controller for chaining</returns>
-        public static Controller AddToRenderScriptBundles(this Controller This, string ScriptBundles = null)
+        public static Controller AddToRenderScriptBundles(this Controller This, string ScriptBundles)
         {
             if (ScriptBundles == null)
                 return This;

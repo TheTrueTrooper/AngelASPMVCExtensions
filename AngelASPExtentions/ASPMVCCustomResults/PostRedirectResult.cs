@@ -24,7 +24,7 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using AngelASPExtentions.ASPMVCControllerExtentions;
-using AngelASPExtentions.ExtraExtentions;
+using AngelASPExtentions.ExtraExtentions.Types;
 
 namespace AngelASPExtentions.ASPMVCCustomResults
 {

@@ -23,7 +23,7 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using AngelASPExtentions.ASPMVCCustomResults;
 using System.Reflection;
-using AngelASPExtentions.ExtraExtentions;
+using AngelASPExtentions.ExtraExtentions.Types;
 
 namespace AngelASPExtentions.ASPMVCControllerExtentions
 {
@@ -70,7 +70,7 @@ namespace AngelASPExtentions.ASPMVCControllerExtentions
         /// <param name="This">a controller to call from/extend</param>
         /// <param name="Action">The action to use</param>
         /// <param name="Data">The Data to use</param>
-        /// <returns>The Data to use</returns>
+        /// <returns>a PostRedirectResult that redirects to a post</returns>
         public static ActionResult RedirectToPostAction(this Controller This, string Action, object Data)
         {
 
