@@ -47,6 +47,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -85,6 +86,7 @@
     <Compile Include="ASPMVCRazorHTMLHelperExtentions\ScriptAndStyleHTMLHeplerExtentions.cs" />
     <Compile Include="ASPMVCRazorHTMLHelperExtentions\URLHTMLHeplerExtentions.cs" />
     <Compile Include="ExtraClasses\URLReplacementCharMap.cs" />
+    <Compile Include="ExtraExtentions\ImageExtentions.cs" />
     <Compile Include="ExtraExtentions\StringExtentions.cs" />
     <Compile Include="ExtraExtentions\TypeCheckingExtentions.cs" />
     <Compile Include="ExtraValidationAttributes\Files\FileSizeAttribute.cs" />
@@ -96,7 +98,9 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ExtraValidationAttributes\MomentJSDates\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="JavaScriptIncludes\jquery.validate.FilesExtention.js" />
   </ItemGroup>

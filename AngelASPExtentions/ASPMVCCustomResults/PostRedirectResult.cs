@@ -78,7 +78,7 @@ namespace AngelASPExtentions.ASPMVCCustomResults
         {
             // to begin serialization we need all the properties so thes are the vars for that a Type to work from and a list of properties to use
             Type DataType;
-            IList<PropertyInfo> props = null;
+            List<PropertyInfo> props = null;
 
             //first get the url to post back to (Non-cross site)
             string PostBackUrl = (Context.Controller as Controller).Url.Action(Action, Controller);
@@ -89,10 +89,7 @@ namespace AngelASPExtentions.ASPMVCCustomResults
                 //first get its type
                 DataType = Data.GetType();
                 //then make a list of properties from it
-                props = new List<PropertyInfo>(DataType.GetProperties());
-
-                //check to see if any type is too complicated
-                if (props.All(x => !x.PropertyType.IsSimpleType()))
+                if(!DataType.IsTypeFlat(out props))
                     throw new Exception("Type is too complex. To ensure perdicable results please ensure all properties types are simple ");
             }
 

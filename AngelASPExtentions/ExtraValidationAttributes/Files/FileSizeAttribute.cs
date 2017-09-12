@@ -41,7 +41,7 @@ namespace AngelASPExtentions.ExtraValidationAttributes.Files
         public FileSizeAttribute(int size)
         {
             _Validsize = size;
-            ErrorMessage = "File is too big. The max file size is " + size;
+            ErrorMessage = "File is too big. The max file size is " + size + ".";
         }
 
         /// <summary>

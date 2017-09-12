@@ -38,7 +38,7 @@ namespace AngelASPExtentions.ASPMVCControllerExtentions
         /// </summary>
         /// <param name="This">a controller to call from/extend</param>
         /// <param name="Action">The action to use</param>
-        /// <param name="Contoller"></param>
+        /// <param name="Contoller">The location of the controller</param>
         /// <param name="Data">The Data to use</param>
         /// <returns>a PostRedirectResult that redirects to a post</returns>
         public static ActionResult RedirectToPostAction(this Controller This, string Action, string Contoller, object Data)

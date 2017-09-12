@@ -14,6 +14,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -30,6 +31,30 @@ namespace AngelASPExtentions.ExtraExtentions.Types
         public static bool IsSimpleType(this Type This)
         {
             return This.IsPrimitive || This.IsEnum || This.Equals(typeof(string)) || This.Equals(typeof(decimal));
+        }
+
+        /// <summary>
+        /// Check the complexity of the object
+        /// </summary>
+        /// <param name="This">The Type to act on</param>
+        /// <param name="OutInfo">Outs the PropertyInfos as a list incase you need them</param>
+        /// <returns>True if the types are all simple and the base</returns>
+        public static bool IsTypeFlat(this Type This,  out List<PropertyInfo> OutInfo)
+        {
+            OutInfo = new List<PropertyInfo>(This.GetProperties());
+            return OutInfo.All(x => x.PropertyType.IsSimpleType());
+        }
+
+        /// <summary>
+        /// Check the complexity of the object
+        /// True if the types are all simple and the base
+        /// </summary>
+        /// <param name="This">The Type to act on</param>
+        /// <returns>True if the types are all simple and the base</returns>
+        public static bool IsTypeFlat(this Type This)
+        {
+            List<PropertyInfo> OutInfo;
+            return IsTypeFlat(This, out OutInfo);
         }
     }
 }

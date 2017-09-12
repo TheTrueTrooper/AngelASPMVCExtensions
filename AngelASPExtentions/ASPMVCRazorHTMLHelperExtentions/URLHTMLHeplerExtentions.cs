@@ -86,5 +86,6 @@ namespace AngelASPExtentions.ASPMVCRazorHTMLHelperExtentions
             //leverage above load with the controllers name
             return MakeFullURLActionLink(This, Action, (This.ViewContext.Controller as Controller).ControllerContext.RouteData.Values["controller"].ToString(), RouteValues, IsHttps);
         }
+
     }
 }
