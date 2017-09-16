@@ -39,7 +39,7 @@ namespace AngelASPExtentions.ASPMVCRazorHTMLHelperExtentions
     /// <summary>
     /// A class to extend the HTMLHelper and give it some new quicker set up in 
     /// </summary>
-    public static class InputForExtentions
+    public static class InputForHTMLHeplerExtentions
     {
         private static StringBuilder AddEachProperty(this StringBuilder This, List<PropertyInfo> Props, object OBJ)
         {
