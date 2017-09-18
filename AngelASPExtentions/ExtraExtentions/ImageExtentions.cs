@@ -1,4 +1,17 @@
-﻿using System;
+﻿#region WritersSigniture
+//Writer: Angelo Sanches (BitSan)(Git:TheTrueTrooper)
+//Date Writen: June 23,2017
+//Project Goal: Encapsulate code for reuse and make more readable.
+//File Goal: Encapsulate the Code to do with Script and Style Extentions for Controller 
+//Link: https://github.com/TheTrueTrooper/AngelASPExtentions
+//Sources: 
+//  {
+//  Name: ASP.NetMVC-razor-Example-TaskPlanner 
+//  Writer:Angelo Sanches (BitSan)
+//  Link: https://github.com/TheTrueTrooper/ASP.NetMVC-razor-Example-TaskPlanner
+//  }
+#endregion
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -7,7 +20,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AngelASPExtentions.ExtraExtentions
+namespace AngelASPExtentions.ExtraExtentions.ImageExtentions
 {
     public static class ImageExtentions
     {

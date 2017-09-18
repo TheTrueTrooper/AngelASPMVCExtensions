@@ -22,6 +22,7 @@
 //  }
 #endregion
 using AngelASPExtentions.ExtraExtentions;
+using AngelASPExtentions.ExtraExtentions.ImageExtentions;
 using AngelASPExtentions.ExtraExtentions.Types;
 using System;
 using System.Collections.Generic;

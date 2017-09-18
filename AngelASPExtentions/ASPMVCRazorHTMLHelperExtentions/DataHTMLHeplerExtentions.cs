@@ -1,4 +1,17 @@
-﻿using AngelASPExtentions.ASPMVCCustomResults;
+﻿#region WritersSigniture
+//Writer: Angelo Sanches (BitSan)(Git:TheTrueTrooper)
+//Date Writen: Sep 14, 2017
+//Project Goal: Encapsulate code for reuse and make more readable.
+//File Goal: Add a Get model as jason so I can make data sent out with a templated page.
+//Link: https://github.com/TheTrueTrooper/AngelASPExtentions
+//Sources: 
+//  {
+//  Name: ASP.NetMVC-razor-Example-TaskPlanner 
+//  Writer:Angelo Sanches (BitSan)
+//  Link: https://github.com/TheTrueTrooper/ASP.NetMVC-razor-Example-TaskPlanner
+//  }
+#endregion
+using AngelASPExtentions.ASPMVCCustomResults;
 using System;
 using System.Collections.Generic;
 using System.Linq;
