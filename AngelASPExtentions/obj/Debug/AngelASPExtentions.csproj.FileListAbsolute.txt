@@ -34,8 +34,8 @@ C:\Users\Angelo's Tower PC\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Deb
 C:\Users\Angelo's Tower PC\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Debug\System.Web.Optimization.xml
 C:\Users\Angelo's Tower PC\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Debug\System.Web.WebPages.xml
 C:\Users\Angelo's Tower PC\Desktop\AngelASPExtentions\AngelASPExtentions\bin\Debug\System.Web.WebPages.Deployment.xml
-C:\Users\Angelo's Tower PC\Desktop\AngelASPExtentions\AngelASPExtentions\obj\Debug\AngelASPExtentions.csprojResolveAssemblyReference.cache
 C:\Users\Angelo's Tower PC\Desktop\AngelASPExtentions\AngelASPExtentions\obj\Debug\AngelASPExtentions.csproj.CoreCompileInputs.cache
 C:\Users\Angelo's Tower PC\Desktop\AngelASPExtentions\AngelASPExtentions\obj\Debug\AngelASPExtentions.dll
 C:\Users\Angelo's Tower PC\Desktop\AngelASPExtentions\AngelASPExtentions\obj\Debug\AngelASPExtentions.pdb
+C:\Users\Angelo's Tower PC\Desktop\AngelASPExtentions\AngelASPExtentions\obj\Debug\AngelASPExtentions.csprojAssemblyReference.cache
 C:\Users\Angelo's Tower PC\Desktop\AngelASPExtentions\AngelASPExtentions\obj\Debug\AngelASPExtentions.csproj.CopyComplete
