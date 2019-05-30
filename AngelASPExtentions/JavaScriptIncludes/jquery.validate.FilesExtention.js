@@ -73,7 +73,7 @@ $.validator.addMethod("maxfilesize", function (value, element, param)
 
 function getFileSize(file)
 {
-    var fileInput = file
+    var fileInput = file;
     try
     {
         var sizeinbytes = file.size;

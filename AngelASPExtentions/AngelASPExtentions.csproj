@@ -80,6 +80,7 @@
     <Compile Include="ASPMVCCustomResults\OpenStringResult.cs" />
     <Compile Include="ASPMVCCustomResults\PostRedirectResult.cs" />
     <Compile Include="ASPMVCRazorHTMLHelperExtentions\DataHTMLHeplerExtentions.cs" />
+    <Compile Include="ASPMVCRazorHTMLHelperExtentions\ErrorMessageHelperExtentions.cs" />
     <Compile Include="ASPMVCRazorHTMLHelperExtentions\InputForHTMLHeplerExtentions.cs" />
     <Compile Include="ASPMVCRazorHTMLHelperExtentions\ScriptAndStyleHTMLHeplerExtentions.cs" />
     <Compile Include="ASPMVCRazorHTMLHelperExtentions\URLHTMLHeplerExtentions.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="ExtraValidationAttributes\Files\FileTypeAttribute.cs" />
     <Compile Include="ExtraValidationAttributes\Files\MaxFileNumAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecurityHelpers\SHSecurityHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
